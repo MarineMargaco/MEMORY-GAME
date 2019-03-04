@@ -1,0 +1,165 @@
+* {
+ padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: rgb(243, 230, 108);
+    
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 360px;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;   
+    color:  rgb(150, 22, 75);  
+}
+
+img{
+    border-radius: 10px;
+}
+
+#updates{
+    float: right;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive; 
+    margin: 200px 130px 100px 100px;
+}
+
+#game{
+    
+    float: left;
+    width: 500px;
+    height: auto;
+    margin: 100px;
+    margin-left: 30%;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    perspective: 1000px;
+    position: absolute;
+   
+}
+
+#updates, #game, h1{
+
+}
+
+#backgroundPopUp, #popUpResult{
+    display: none;
+}
+
+#backgroundPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    opacity: 0.5;
+    z-index: 10;
+
+}
+
+#popUpResult{
+    z-index: 10;
+    position: fixed;
+    width: 500px;
+    height: 320px;
+    border: 2px solid rgb(150, 22, 75);
+    border-radius : 7px;
+}
+
+#popUpBody{
+    background-color: white;
+    height: 216px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#popUpImg{
+    padding: 6px;
+    margin: 0px 23px;
+    
+}
+
+#popUpNext{
+    height: 100px;
+    background-color: #cf4a53;
+    padding: 25px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#nextButton{
+    width: 115px;
+    height: 50px;
+    margin: 0px auto;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.card{
+
+display: inline-block;
+width: 110px;
+height: 110px;
+position: relative;
+border: 4px solid rgb(150, 22, 75);
+border-radius: 10px;
+transform-style: preserve-3d;
+transition: transform .5s;
+ 
+}
+
+.front,
+.back{
+    display: inline-block;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+
+.front{
+    display: inline-block;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition : transform 0.3s linear 0s;
+ 
+}
+
+.back{
+    display: inline-block;
+    position: absolute;
+    transform: rotateY(180deg);
+    transition : transform 0.3s linear 0s;
+}
+
+#button{
+    width: 115px;
+    height: 50px;
+   float: right;
+  position: absolute;
+   margin-left: 5px;
+   border-radius: 10px;
+   border: 3px dashed white;
+   background-color: rgb(150, 22, 75);
+   color: white; 
+   font-family: 'Press Start 2P', cursive;
+   font-size: 20px;
+   outline: none;
+}
+ 
+
+/*.back :hover{
+    
+    cursor: pointer;
+    border: 3px solid rgb(116, 22, 61);
+} */
+
